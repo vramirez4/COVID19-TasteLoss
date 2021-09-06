@@ -48,8 +48,8 @@ COVID19$monthcontinuous<-12*(year(COVID19$date) - 2020) + month(COVID19$date)
 COVID19$datecontinuous <- yday(COVID19$date) + 365*(year(COVID19$date) - 2020)
 
 COVID19$Sub_group<-NA
-COVID19$Sub_group[COVID19$`Sub-group`=="Subjective"]<-"Self-Report"
-COVID19$Sub_group[COVID19$`Sub-group`=="Objective"]<-"Direct-Report"
+COVID19$Sub_group[COVID19$`Sub-group`=="Subjective"]<-"Self-Measure"
+COVID19$Sub_group[COVID19$`Sub-group`=="Objective"]<-"Direct-Measure"
 COVID19$`Measure Type`<-as.factor(COVID19$`Sub_group`)
 ```
 
