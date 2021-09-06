@@ -1,0 +1,242 @@
+#,Author Name,Number of Subjects,Number of Cases,Sub-group,Measurement,Median Age,Mean Age,Age,DOI,Sex (% Male),Specific Type of Test,Date of First Publication,Country,Sex
+2,Vaira et al. 1,72,39,Objective,Taste Only; Taste and Smell,NA,49.2,49.2,10.1002/hed.26204,0.375,Four solution test,2020-04-27T00:00:00Z,Italy,37.5
+4,Vaira et al. 2,33,17,Objective,Taste Only; Taste and Smell,NA,51.8,51.8,10.1002/hed.26228,0.3333,Four solution test,2020-05-01T00:00:00Z,Italy,33.33
+5,Merza et al.,15,4,Subjective,Taste Only; Taste and Smell,NA,28.06,28.06,10.1016/j.dsx.2020.04.047,0.6,"Unknown, Hospital Reported",2020-05-05T00:00:00Z,Iraq,60
+7,Levinson & Elbaz et al.,42,14,Subjective,Taste Only,34,NA,34,10.1080/23744235.2020.1772992,0.5476,Self Reported,2020-06-18T00:00:00Z,Israel,54.76
+9,Haehner et al.,34,22,Subjective,Smell AND/OR Taste,NA,41.3,41.3,10.1159/000509143,0.454,Self Reported,2020-06-11T00:00:00Z,Germany,45.4
+10,Speth et al.,103,67,Subjective,Taste Only,NA,46.8,46.8,10.1177/0194599820929185,0.485,Self Reported,2020-05-19T00:00:00Z,Switzerland,48.5
+12,De Maria et al.,95,48,Subjective,Smell AND Taste,NA,NA,NA,10.1002/jmv.25995,NA,Self Reported,2020-05-08T00:00:00Z,Italy,NA
+13,Menni et al. 2,7178,4668,Subjective,Smell AND Taste,NA,41.25,41.25,10.1038/s41591-020-0916-2,0.2812,Self Reported,2020-06-02T00:00:00Z,"United Kingdom, United States",28.12
+14,Yan et al. 1,59,42,Subjective,Taste Only,NA,NA,NA,10.1111/alr.22579,0.492,Self Reported,2020-04-12T00:00:00Z,United States,49.2
+15,Luers & Rokohl et al.,72,50,Subjective,Taste Only,NA,38,38,10.1093/cid/ciaa525,0.5694,Self Reported,2020-05-01T00:00:00Z,Germany,56.940000000000005
+16,Roland et al.,145,95,Subjective,Smell OR Taste,NA,40,40,10.1111/alr.22602,0.3517,Self Reported,2020-05-04T00:00:00Z,"United States, Global",35.17
+17,Boscolo‑Rizzo et al.,54,34,Subjective,Smell OR Taste,NA,NA,NA,10.1007/s00405-020-06066-9,NA,Self Reported,2020-05-24T00:00:00Z,Italy,NA
+18,Liu et al.,321,42,Subjective,Smell OR Taste,NA,NA,NA,10.3390/ijerph17093311,0.47,"Unknown, Hospital Reported",2020-05-09T00:00:00Z,Taiwan,47
+20,Paderno & Schreiber et al.,508,321,Subjective,Taste Only,NA,53.3,53.3,10.1111/alr.22610,0.561,Self Reported,2020-05-14T00:00:00Z,Italy,56.10000000000001
+21,Lee et al.,3191,353,Subjective,Taste Only; Taste and Smell,NA,44,44,10.3346/jkms.2020.35.e174,0.364,Self Reported,2020-05-06T00:00:00Z,Korea,36.4
+22,Lechien & Chiesa‐Estomba et al.,385,342,Subjective,Taste Only,NA,36.9,36.9,10.1007/s00405-020-05965-1,0.369,"Self Reported, Survey based on NHANES and sQOD-NS",2020-04-06T00:00:00Z,"Belgium, France, Spain, Italy",36.9
+24,Gelardi et al.,72,52,Subjective,Taste Only; Taste and Smell,NA,49.7,49.7,10.23750/abm.v91i2.9524,0.5416,"Self Reported, Not specified",2020-05-11T00:00:00Z,Italy,54.16
+25,Giacomelli et al.,59,17,Subjective,Taste Only; Taste and Smell,NA,60,60,10.1093/cid/ciaa330,0.678,Self Reported,2020-03-26T00:00:00Z,Italy,67.80000000000001
+27,Lechien et al. 2,70,33,Subjective,Taste Only,NA,42,42,10.1002/hed.26279,0.651,Self Reported Survey,NA,NA,65.10000000000001
+28,Shoer & Karady et al.,498,136,Subjective,Smell OR Taste,NA,49.076,49.076,10.1016/j.medj.2020.10.002,0.5843,Self Reported Survey,NA,Israel,58.43000000000001
+29,Vaira et al. 3,345,155,Objective,Taste Only,60,NA,60,10.1002/hed.26269,0.678,Four solution test,2020-05-20T00:00:00Z,Italy,67.80000000000001
+40,Mao & Wang et al.,214,12,Subjective,Taste Only,NA,52.7,52.7,10.1001/jamaneurol.2020.1127,0.407,"Self Reported, EHR Records",2020-02-25T00:00:00Z,China,40.699999999999996
+55,Spinato et al.,202,130,Subjective,Smell OR Taste,NA,56,56,10.1001/jama.2020.6771,0.48,SNOT-22,2020-04-22T00:00:00Z,Italy,48
+58,Beltran-Corbellini et al.,79,28,Subjective,Taste Only,NA,61.35,61.35,10.1111/ene.14273,0.563,Self Reported,2020-04-22T00:00:00Z,Spain,56.3
+86,Trubiano et al.,28,7,Subjective,Smell AND Taste,55,NA,55,10.1093/cid/ciaa655,0.5,Self Reported,2020-05-28T00:00:00Z,Australia,50
+87,Moein et al.,60,14,Subjective,Taste Only; Taste and Smell,NA,46.55,46.55,10.1111/alr.22587,0.6666,Self report,2020-04-17T00:00:00Z,Iran,66.66
+89,Yan et al. 2,120,70,Subjective,Taste Only,53.5,NA,53.5,10.1111/alr.22592,0.4765,Self Reported,2020-04-24T00:00:00Z,United States,47.65
+91,Gudbjartsson & Helgason et al.,1113,119,Subjective,Smell OR Taste,NA,41.3,41.3,10.1056/NEJMoa2006100,0.494,Self Reported,2020-04-14T00:00:00Z,Iceland,49.4
+92,Wee et al.,154,35,Subjective,Smell OR Taste,NA,NA,NA,10.1007/s00405-020-05999-5,NA,"Self Reported, Unspecified",2020-04-24T00:00:00Z,Singapore,NA
+93,Dawson & Rabold et al.,42,24,Subjective,Taste Only,NA,37.4,37.4,10.1093/cid/ciaa799,0.3478,Self Reported,2020-06-21T00:00:00Z,United States,34.78
+98,Noh et al.,199,45,Subjective,Taste Only,NA,38,38,10.1016/j.jinf.2020.05.035,0.347,Self Reported,2020-05-21T00:00:00Z,Korea,34.699999999999996
+100,Tudrej et al.,198,92,Subjective,Taste Only,45,NA,45,10.1007/s11606-020-05933-9,0.35,Self Reported Questionnaire,2020-06-09T00:00:00Z,France,35
+105,Sayin et al.,64,16,Subjective,Taste Only,39,38.65,39,10.1177/0194599820931820,0.375,Online Questionnaire (AAO-HNS),2020-06-09T00:00:00Z,Turkey,37.5
+108,Dell'era et al.,355,235,Subjective,Taste Only,50,NA,50,10.1002/hed.26288,0.54,"Self report questionnaire in person, or telephone",2020-06-11T00:00:00Z,Italy,54
+112,Baidsee & Biadsee et al.,128,67,Subjective,Taste Only,NA,36.25,36.25,10.1177/0194599820934380,0.4143,Self Reported Questionniare,2020-06-16T00:00:00Z,Israel,41.43
+113,Qiu & Cui et al.,394,100,Subjective,Taste Only; Taste and Smell,39,NA,39,10.1177/0194599820934376,0.57,"Retrospective chart review, questionnaires (VAS and QOD)",2020-06-16T00:00:00Z,"China, France, Germany",56.99999999999999
+115,Izquierdo-Dominguez & Rojas-Lechuga et al.,846,442,Subjective,Taste Only,NA,56.8,56.8,10.18176/jiaci.0595,0.527,Self Report Questionnaire (VAS for sinonasal symptoms),2020-06-17T00:00:00Z,Spain,52.7
+117,Weng et al.,105,66,Subjective,Smell OR Taste,38,NA,38,10.1002/jmv.26196,0.267,"Retrospective, Self Report",2020-06-19T00:00:00Z,United States,26.700000000000003
+119,Lombardi et al.,139,20,Subjective,Smell AND Taste,NA,44.5,44.5,10.1016/j.cmi.2020.06.013,0.358,Self-Report,2020-06-20T00:00:00Z,Italy,35.8
+120,Freni et al.,50,35,Subjective,Taste Only,NA,37.7,37.7,10.1016/j.amjoto.2020.102612,0.6,Self-Report validated questionnaire of Olfactory Disorders-Negative Statements (sQOD-NS),2020-06-18T00:00:00Z,Italy,60
+123,Altin et al.,81,22,Objective,Taste Only,NA,54.16,54.16,10.1007/s00405-020-06155-9,0.506,Solution based test,2020-06-23T00:00:00Z,Turkey,50.6
+124,Schmithausen & Döhla et al.,41,28,Subjective,Smell AND/OR Taste,40,NA,40,10.20411/pai.v5i1.374,0.49,Self-Report,2020-05-16T00:00:00Z,Germany,49
+125,Durrani et al.,30,4,Subjective,Smell AND Taste,NA,44,44,10.12669/pjms.36.COVID19-S4.2778,0.8,Self-Report,2020-05-18T00:00:00Z,Pakistan,80
+127,Mercante et al.,204,113,Subjective,Taste Only,NA,52.6,52.6,10.1001/jamaoto.2020.1155,0.539,Self Report Telephone SNOT 22 survey,2020-06-18T00:00:00Z,Italy,53.900000000000006
+128,Lan et al.,83,13,Subjective,Smell AND/OR Taste,NA,43.9,43.9,10.1371/journal.pone.0235460,0.277,Self-Report,2020-06-26T00:00:00Z,United States,27.700000000000003
+130,Hintschich et al.,41,8,Objective,Taste Only,37,NA,37,10.1111/alr.22655,0.32,Taste Strips,2020-04-12T00:00:00Z,Germany,32
+132,Vacchiano et al.,108,66,Subjective,Taste Only,59,NA,59,10.1007/s10072-020-04525-z,0.57,Telephonic questionnaire,2020-07-02T00:00:00Z,Italy,56.99999999999999
+133,Petrocelli et al.,300,184,Objective,Taste Only,NA,43.6,43.6,10.1017/S0022215120001358,0.25,Four solution test,2020-07-28T00:00:00Z,Italy,25
+134,Lechien & Chiesa-Estomba et al. 3,2013,1136,Subjective,Taste Only,39.5,NA,39.5,10.7326/M20-2428,0.34,NHANES Self-report,2020-05-26T00:00:00Z,Europe,34
+135,Sakalli et al.,172,81,Subjective,Taste Only,NA,37.8,37.8,10.1016/j.amjoto.2020.102622,0.488,Self Report telephone/ in person,2020-06-23T00:00:00Z,Turkey,48.8
+136,Boscolo‑Rizzo et al. 2,187,124,Subjective,Smell OR Taste,56,NA,56,10.1001/jamaoto.2020.1379,0.449,Self-Report ARTIQ and SNOT-22 Survey,2020-07-02T00:00:00Z,Italy,44.9
+138,Adorni et al.,856,507,Subjective,Smell AND/OR Taste,NA,47.4,47.4,10.2196/21866,0.401,Anonymous online survey,2020-09-18T00:00:00Z,Italy,40.1
+142,Somekh et al.,73,37,Subjective,Smell AND/OR Taste,NA,NA,NA,10.1097/INF.0000000000002817,NA,Self Report,2020-07-10T00:00:00Z,Israel,NA
+150,Güner et al.,222,17,Subjective,Taste Only,NA,50.6,50.6,10.3906/sag-2006-164,0.595,Self Report,2020-07-19T00:00:00Z,Turkey,59.5
+151,Martin-Sanz et al.,215,114,Subjective,Taste Only,NA,42.9,42.9,10.1002/lary.28999,0.192,Self report,2020-07-20T00:00:00Z,Spain,19.2
+152,Boscolo-Rizzo et al. 2,183,110,Subjective,Smell OR Taste,NA,NA,NA,10.4193/Rhin20.263,NA,Self Report SNOT-22,2020-10-01T00:00:00Z,Italy,NA
+155,Villarreal et al.,230,161,Subjective,Taste Only,43,NA,43,10.1007/s00405-020-06237-8,0.1478,Self Report,2020-07-28T00:00:00Z,Spain,14.78
+156,Nakagawara et al.,57,10,Subjective,Smell AND/OR Taste,NA,35.4,35.4,10.1016/j.ijid.2020.07.034,0.439,Self Report,2020-07-26T00:00:00Z,Japan,43.9
+157,Wagner & Shweta et al.,2317,145,Subjective,Smell OR Taste,NA,41.9,41.9,10.7554/eLife.58227,0.51,EHR self report,2020-07-07T00:00:00Z,United States,51
+158,Fontanet et al.,59,52,Subjective,Taste Only,NA,37,37,10.1101/2020.04.18.20071134,0.219,Self Report,2020-04-24T00:00:00Z,France,21.9
+159,Kempker et al.,51,27,Subjective,Taste Only,NA,NA,NA,10.1093/cid/ciaa877,0.19,Self Reprt,2020-06-28T00:00:00Z,United States,19
+161,Chen et al.,101,60,Subjective,Taste Only,NA,48.32,48.32,10.1053/j.gastro.2020.05.036,0.41,Self Report Telephone,2020-05-15T00:00:00Z,United States,41
+162,Gorzkowski et al.,229,124,Subjective,Taste Only,NA,38.5,38.5,10.1002/lary.28957,0.3643,Self Report,2020-07-02T00:00:00Z,France,36.43
+165,Morshed et al.,103,36,Subjective,Smell OR Taste,37,NA,37,10.1101/2020.07.30.20165100,0.718,Self Report,2020-08-02T00:00:00Z,Bangladesh,71.8
+169,Iversen et al.,1163,377,Subjective,Smell OR Taste,NA,44.4,44.4,10.1016/S1473-3099(20)30589-2,0.211,Retrospective Symptom Self Report,2020-08-03T00:00:00Z,Denmark,21.099999999999998
+170,Cocco et al.,105,78,Subjective,Smell OR Taste,NA,56.2,56.2,10.1007/s00415-020-10135-8,0.6,Self Report Questionaire,2020-08-07T00:00:00Z,Italy,60
+171,Vaira et al. 4,106,76,Objective,Taste Only,NA,49.6,49.6,10.1186/s40463-020-00449-y,0.5,Four solution test,2020-08-06T00:00:00Z,Italy,50
+172,Klopfenstein et al. 2,70,34,Subjective,Taste Only,NA,57,57,10.1186/s40463-020-00449-y,0.41,Self Report,2020-08-06T00:00:00Z,France,41
+173,Vaira et al. 5,138,92,Objective,Taste Only,NA,51.2,51.2,10.1017/S0022215120001826,0.493,Four solution test,2020-08-12T00:00:00Z,Italy,49.3
+175,Cho et al.,83,36,Subjective,Taste Only,NA,36.4,36.4,10.1002/lary.29056,0.5783,Self Report,2020-08-13T00:00:00Z,China,57.830000000000005
+176,Salepci et al.,223,77,Subjective,Taste Only,51,NA,51,10.1007/s00405-020-06284-1,0.507,Self Report,2020-08-13T00:00:00Z,Turkey,50.7
+177,Mohamud et al.,60,17,Subjective,Taste Only,NA,45.7,45.7,10.2147/IDR.S263632,0.7,EHR,2020-07-29T00:00:00Z,Somalia,70
+178,Kronborg et al.,37,3,Subjective,Taste Only,NA,NA,NA,PMID: 32800070,0.5272,EMR,2020-07-08T00:00:00Z,Netherlands,52.72
+180,Merkely et al.,70,12,Subjective,Smell OR Taste,NA,48.7,48.7,10.1007/s11357-020-00226-9,0.464,Self Report,2020-07-17T00:00:00Z,Hungary,46.400000000000006
+181,Jalessi et al.,92,15,Subjective,Taste Only,NA,53.94,53.94,10.1007/s10072-020-04590-4,0.674,Self Report,2020-07-12T00:00:00Z,Iran,67.4
+183,Utku et al.,143,51,Subjective,Taste Only,NA,57.8,57.8,10.1177/0036933020949253,0.5522,Self Report,2020-08-17T00:00:00Z,Turkey,55.22
+184,Maeshler et al.,73,29,Subjective,Smell AND Taste,34,NA,34,10.1016/j.cmi.2020.08.017,0.568,EMR,2020-08-19T00:00:00Z,Germany,56.8
+185,Chary et al.,115,81,Subjective,Smell OR Taste,47,NA,47,10.1177/1945892420930954,0.2957,Self Report and phone interviews,2020-06-12T00:00:00Z,France,29.57
+186,Bergquist et al.,208,131,Subjective,Smell OR Taste,NA,47.8,47.8,10.1007/s42399-020-00453-3,0.302,EMR,2020-08-14T00:00:00Z,United States,30.2
+187,Al-Ani et al.,141,28,Subjective,Taste Only; Taste and Smell,NA,35.91,35.91,10.1007/s12070-020-02064-9,0.5035,EMR,2020-08-19T00:00:00Z,Qatar,50.349999999999994
+188,Otte et al.,91,80,Subjective,Smell AND Taste,NA,43.01,43.01,10.1080/00016489.2020.1811999,0.5054,Self report - objective AFTERWARDS (Sniffin Sticks),2020-07-08T00:00:00Z,Germany,50.54
+189,Rojas-Lechuga et al.,197,128,Subjective,Taste Only,NA,46.5,46.5,10.1007/s00405-020-06266-3,0.365,VAS scale,2020-08-25T00:00:00Z,Spain,36.5
+190,Lechien et al. 4,1420,770,Subjective,Taste Only,NA,39.17,39.17,10.1111/joim.13089,0.3225,Questionnaire,2020-04-30T00:00:00Z,Europe,32.25
+191,Van Loon et al.,156,62,Subjective,Smell OR Taste,NA,NA,NA,10.1097/JOM.0000000000002015,0.2237,Clinical evaluation,2020-09-26T00:00:00Z,Belgium,22.37
+192,Neto et al.,655,502,Subjective,Taste Only,NA,37.7,37.7,10.1177/0194599820954825,0.353,"11 point scale, interview",2020-09-01T00:00:00Z,Brazil,35.3
+193,Vena et al.,398,26,Subjective,Smell OR Taste,51,NA,51,10.3390/jcm9092780,0.444,Questionnaire,2020-08-27T00:00:00Z,Italy,44.4
+194,Weiss et al.,17,7,Subjective,Taste Only,NA,37.5,37.5,10.1101/2020.09.07.20188813,0.21,Home test,2020-09-10T00:00:00Z,United States,21
+196,Chiesa-Estomba et al.,542,333,Subjective,Taste Only,NA,34,34,10.1016/j.amjoto.2020.102605,0.4022,sQOD-NS,2020-06-06T00:00:00Z,Argentina,40.22
+197,Carignan et al.,134,85,Subjective,Taste Only,57.1,NA,57.1,10.1503/cmaj.200869,0.478,Questionnaire by telephone,2020-06-29T00:00:00Z,Canada,47.8
+198,Kim et al.,213,58,Subjective,Taste Only,26,NA,26,10.1016/j.cmi.2020.04.040,0.384,Questionnaire,2020-05-01T00:00:00Z,Korea,38.4
+199,Lee et al. 2,56,23,Subjective,Taste Only,38,NA,38,10.1017/cem.2020.420,0.411,Questionnaire,2020-06-08T00:00:00Z,Canada,41.099999999999994
+200,Liguori et al.,103,48,Subjective,Taste Only,NA,55,55,10.1016/j.bbi.2020.05.037,0.5728,All anamnestic interviews were collected by clinicians,2020-05-19T00:00:00Z,Italy,57.28
+201,Meini et al.,100,41,Subjective,Taste Only,NA,65,65,10.1007/s00405-020-06102-8,0.6,Telephone interview,2020-06-04T00:00:00Z,Italy,60
+202,Sierpiński et al.,1942,923,Subjective,Taste Only,50,NA,50,10.20452/pamw.15414,0.389,Questionnaire,2020-06-04T00:00:00Z,Poland,38.9
+204,Zayet et al.,95,62,Subjective,Taste Only,NA,40,40,10.1007/s15010-020-01442-3,0.17,NA,2020-05-14T00:00:00Z,France,17
+205,Aggarwal et al.,16,3,Subjective,Taste Only,NA,65.5,65.5,10.1515/dx-2020-0046,0.75,NA,2020-05-26T00:00:00Z,United States,75
+206,Patel et al.,141,74,Subjective,Taste Only,NA,45.6,45.6,10.1016/j.cmi.2020.05.026,0.5886,NA,2020-06-02T00:00:00Z,United Kingdom,58.86
+207,Romero-Sanchez et al.,841,52,Subjective,Taste Only,NA,66.42,66.42,10.1212/WNL.0000000000009937,0.562,NA,2020-06-01T00:00:00Z,Spain,56.2
+209,Lindahl et al.,75,9,Subjective,Smell AND/OR Taste,NA,NA,NA,10.1080/20008686.2020.1789036,0.17,COVID-19 Antibody test (IgG or IgM),2020-08-05T00:00:00Z,Sweden,17
+211,Perlman et al.,433,193,Subjective,Smell OR Taste,NA,34.5,34.5,10.2196/23197,0.276,App,2020-10-20T00:00:00Z,Israel,27.6
+213,Lv et al.,196,23,Subjective,Taste Only,NA,50.6,50.6,10.1016/j.ijid.2020.09.039,0.4731,Telephone interview,2020-09-17T00:00:00Z,China,47.31
+215,Vaira et al. 6,556,284,Objective,Taste Only,NA,NA,NA,10.1007/s12070-020-02182-4,NA,4 solution taste test,2020-09-30T00:00:00Z,Italy,NA
+216,Korkmaz et al.,116,48,Subjective,Taste Only,NA,57.24,57.24,10.1007/s00405-020-06396-8,0.5,VAS questionnaire,2020-10-03T00:00:00Z,Turkey,50
+217,Rajkumar et al.,230,25,Subjective,Taste Only,NA,43.56,43.56,10.1007/s12070-020-02175-3,0.6336,Smell ten items; 26.9 report smell loss - 41.3% had smell loss,2020-09-30T00:00:00Z,India,63.36000000000001
+218,Ramasamy et al.,145,34,Subjective,Taste Only,NA,43,43,10.1177/0003489420963165,0.6206,NA,2020-10-07T00:00:00Z,Malaysia,62.06
+219,Nakanishi et al.,32,18,Subjective,Taste Only,NA,51.4,51.4,10.1620/tjem.252.109,0.55,NA,2020-10-07T00:00:00Z,Japan,55.00000000000001
+220,Konstantinidis et al.,79,22,Subjective,Taste Only,NA,30.7,30.7,10.1159/000511436,0.4936,NA,2020-10-13T00:00:00Z,Greece,49.36
+221,Makda et al.,114,9,Subjective,Taste Only,NA,51,51,10.7759/cureus.10360,0.544,NA,2020-09-10T00:00:00Z,Pakistan,54.400000000000006
+222,Zimmerman et al.,77,58,Subjective,Smell OR Taste,NA,44.4,44.4,10.1080/21645515.2020.1822135,0.333,NA,2020-10-20T00:00:00Z,United States,33.300000000000004
+223,Bidkar et al.,76,64,Objective,Taste Only,28,NA,28,10.1007/s12070-020-02210-3,0.505,Two solution test,2020-10-14T00:00:00Z,India,50.5
+224,Seo et al.,62,15,Subjective,Smell OR Taste,NA,33,33,10.3346/jkms.2020.35.e375,0.3,NA,2020-10-26T00:00:00Z,Korea,30
+225,Alshami et al.,128,28,Subjective,Smell AND Taste,NA,39.6,39.6,10.1371/journal.pone.0241258,0.539,NA,2020-10-30T00:00:00Z,Saudi Arabia,53.900000000000006
+226,Smith et al.,120,41,Subjective,Taste Only,43,NA,43,10.1007/s42399-020-00603-7,0.38,Structured interview,2020-10-24T00:00:00Z,United States,38
+227,Schirinzi et al.,86,69,Subjective,Taste Only,NA,68,68,10.3390/microorganisms8111718,0.674,NA,2020-11-02T00:00:00Z,Italy,67.4
+228,Tham et al.,1065,49,Subjective,Taste Only,34,NA,34,10.1007/s00405-020-06455-0,0.876,NA,2020-11-07T00:00:00Z,Singapore,87.6
+229,Waterfield et al.,68,26,Subjective,Smell AND/OR Taste,10.1,NA,10.1,10.1136/archdischild-2020-320558,0.51,NA,2020-11-10T00:00:00Z,United Kingdom,51
+230,Murat et al.,193,83,Subjective,Smell AND/OR Taste,NA,48.5,48.5,10.1007/s11845-020-02433-x,0.487,NA,2020-11-14T00:00:00Z,Turkey,48.699999999999996
+231,Adedeji et al.,53,5,Subjective,Taste Only,NA,12.63,12.63,10.11604/pamj.supp.2020.35.145.25350,0.5238,NA,2020-08-12T00:00:00Z,Nigeria,52.38
+232,Jain et al.,410,92,Subjective,Taste Only,NA,37.21,37.21,10.1017/S0022215120002467,0.639,NA,2020-11-16T00:00:00Z,India,63.9
+233,Kacem et al.,646,238,Subjective,Taste Only,NA,42.17,42.17,10.1007/s10072-020-04866-9,0.539,NA,2020-11-17T00:00:00Z,Tunisia,53.900000000000006
+234,Krishnasamy et al.,1263,56,Subjective,Taste Only,35,NA,35,10.4269/ajtmh.20-1096,0.663,NA,2020-11-17T00:00:00Z,India,66.3
+236,Nakakubo et al.,23,3,Subjective,Smell OR Taste,68.5,NA,68.5,10.1186/s12879-020-05604-4,0.764,NA,2020-11-18T00:00:00Z,Japan,76.4
+237,Rubel et al.,49,44,Subjective,Smell AND/OR Taste,NA,43.1,43.1,10.1177/2473974X20970176,0.347,NA,2020-11-02T00:00:00Z,United States,34.699999999999996
+238,Garg et al.,391,35,Subjective,Taste Only,NA,49.07,49.07,10.4103/aian.AIAN_560_20,0.61,NA,2020-08-14T00:00:00Z,India,61
+239,Gözen et al.,59,25,Subjective,Taste Only,NA,37.41,37.41,10.1177/0145561320975510,0.5593,NA,2020-11-25T00:00:00Z,Turkey,55.93
+240,Kumar et al.,89,6,Subjective,Smell AND/OR Taste,NA,NA,NA,10.1177/1010539520977307,0.5843,NA,2020-11-26T00:00:00Z,India,58.43000000000001
+241,Petersen et al.,180,102,Subjective,Taste Only,NA,39.9,39.9,10.1093/cid/ciaa1792,0.46,NA,2020-11-30T00:00:00Z,Denmark,46
+242,Bulğurcu et al.,418,135,Subjective,Taste Only,NA,46.5,46.5,10.1097/SCS.0000000000007284,0.5311,NA,2020-11-25T00:00:00Z,Turkey,53.11
+243,Mazzatenta et al.,100,47,Objective,Taste Only,NA,63,63,10.3389/fmed.2020.589409,0.7,Two solution test,2020-12-02T00:00:00Z,Italy,70
+244,Anna et al.,215,111,Subjective,Smell AND/OR Taste,NA,38,38,10.1002/eji.202049058,0.226,NA,2020-12-01T00:00:00Z,France,22.6
+245,Sayin et al. 2,52,19,Subjective,Taste Only,59,61.32,59,10.1177/0145561320977464,0.692,NA,2020-12-01T00:00:00Z,Turkey,69.19999999999999
+247,Staven at al.,451,311,Subjective,Taste Only,NA,49.8,49.8,10.1136/thoraxjnl-2020-216377,0.44,Survey,NA,Norway,44
+248,Ramteke et al.,30,0,Objective,Smell OR Taste,10.5,NA,10.5,10.1093/tropej/fmaa106,0.6,"India protocol smell check using coconut oil, chocolates, and flavored milk",2020-12-05T00:00:00Z,India,60
+249,Lechner et al.,208,187,Subjective,Smell AND/OR Taste,NA,NA,NA,10.1111/COA.13683,0.29,survey,2020-12-06T00:00:00Z,United Kingdom,28.999999999999996
+250,Conchiero-Guisan et al.,33,4,Subjective,Taste Only,NA,8.4,8.4,10.1016/j.ijporl.2020.110539,0.61,Questionnaire,2020-12-01T00:00:00Z,Spain,61
+252,Horvath et al.,102,64,Subjective,Taste Only,NA,45,45,10.1080/00016489.2020.1855366,0.4,Retrospective telephonic questions,2020-12-12T00:00:00Z,Australia,40
+253,Bastiani et al.,694,365,Subjective,Smell AND/OR Taste,NA,50,50,10.2196/23897,0.319,self report survey,2020-09-29T00:00:00Z,Italy,31.900000000000002
+254,Elimian et .,10517,130,Subjective,Taste Only,NA,35.6,35.6,10.1136/bmjopen-2020-044079,0.677,self report / clinical assessment,2020-11-10T00:00:00Z,Nigeria,67.7
+258,Adamczyk et al.,52,26,Objective,Taste Only,NA,21.7,21.7,10.1101/2020.05.31.20118380,0.9808,4 solution taste test,2020-06-03T00:00:00Z,Poland,98.08
+259,Lagi et al.,48,26,Subjective,Taste Only,62,NA,62,10.2807/1560-7917.ES.2020.25.17.2000556,0.65,self report,2020-04-30T00:00:00Z,Italy,65
+260,Lapostolle et al.,1487,422,Subjective,Taste Only,44,NA,44,10.1007/s11739-020-02379-z,0.47,NA,2020-05-30T00:00:00Z,France,47
+262,Zayet at al.,70,34,Subjective,Taste Only,NA,57,57,10.1016/j.micinf.2020.05.016,0.51,questionnaire,2020-06-16T00:00:00Z,France,51
+263,Zou et al.,81,21,Subjective,Taste Only,58,NA,58,10.21203/rs.3.rs-28370/v1,0.47,telephone follow-up,NA,China,47
+265,Bianco et al.,50,18,Subjective,Taste Only,NA,51.2,51.2,10.1177/0145561320981447,0.58,questionaire,2020-11-18T00:00:00Z,Italy,57.99999999999999
+266,Andrews et al.,78,54,Subjective,Taste Only,39,NA,39,10.1002/lio2.507,0.244,questionaire,NA,United Kingdom,24.4
+268,Kavaz et al.,53,32,Subjective,Smell AND/OR Taste,NA,47.2,47.2,10.1007/s00405-020-06503-9,0.4528,Telephone survey,NA,Turkey,45.28
+269,Sahoo et al.,718,76,Subjective,Taste Only,34,36.7,34,10.1007/s00405-020-06563-x,0.78,NA,2020-12-10T00:00:00Z,India,78
+271,Lechien & Cabaraux et al,78,53,Subjective,Taste Only,NA,40.6,40.6,10.1101/2020.04.15.20066472;,0.41,Survey,2020-04-18T00:00:00Z,Global,41
+278,Lechien & Chiesa‐Estomba et al. 2,2581,1182,Subjective,Taste Only,NA,44.5,44.5,10.1111/joim.13209,0.301,Questions from NHNES,2021-01-05T00:00:00Z,Europe,30.099999999999998
+280,Fisher et al.,157,98,Subjective,Smell OR Taste,40,NA,40,10.1111/irv.12832,0.47,NA,2020-12-10T00:00:00Z,United States,47
+281,Niklassen et al.,61,16,Objective,Taste Only,NA,44.5,44.5,10.1002/lary.29383,0.5315,Taste Strips and Taste Sprays,2021-01-06T00:00:00Z,Denmark,53.15
+283,Nishanth et al.,55,41,Subjective,Taste Only,NA,36,36,10.1002/jmv.26784.,0.05,NA,2021-01-08T00:00:00Z,India,5
+285,Song et al. 2,388,48,Subjective,Smell OR Taste,26,30.3,26,10.3346/jkms.2021.36.e14,0.433,Health Questionaire,2020-12-20T00:00:00Z,Korea,43.3
+286,Polat et al.,217,109,Subjective,Taste Only,NA,41.74,41.74,10.1097/SCS.0000000000007412,0.594,NA,2020-11-18T00:00:00Z,Turkey,59.4
+287,Arslan et al.,118,15,Subjective,Smell AND/OR Taste,6.5833,NA,6.5833,10.1111/PED.14602,0.557,NA,2021-01-10T00:00:00Z,Turkey,55.7
+288,Yadav et al.,152,20,Subjective,Taste Only,NA,43.03,43.03,10.1007/s12070-020-02295-w,0.5131,Questionaire,2020-11-24T00:00:00Z,India,51.31
+289,Salcan et al.,94,33,Objective,Taste Only,NA,53,53,10.1007/s00405-020-06560-0,0.553,4 solution test; taste strips,2020-12-10T00:00:00Z,Turkey,55.300000000000004
+292,Amerigo et al.,234,132,Subjective,Taste Only,NA,NA,NA,10.18176/jiaci.0670,0.265,NA,2021-01-19T00:00:00Z,Spain,26.5
+294,Fistera et al.,43,6,Subjective,Taste Only,NA,66,66,10.1186/s12245-020-00302-z,0.624,Retrospective study,2020-08-20T00:00:00Z,Germany,62.4
+295,Pinna et el.,50,5,Subjective,Taste Only,NA,59.6,59.6,10.1016/j.jns.2020.116969,0.58,NA,2020-06-03T00:00:00Z,United States,57.99999999999999
+296,Liang et al.,86,33,Subjective,Taste Only,NA,25.5,25.5,10.1016/j.ijid.2020.06.086,0.5116,NA,2020-06-24T00:00:00Z,China,51.160000000000004
+297,Magnavita et al.,82,31,Subjective,Taste Only,NA,NA,NA,10.3390/ijerph17145218,0.3017,NA,2020-07-20T00:00:00Z,Italy,30.17
+298,La Torre et al.,30,18,Subjective,Taste Only,NA,30.7,30.7,10.3390/jcm9092870,0.533,NA,2020-09-04T00:00:00Z,Italy,53.300000000000004
+300,Barillari et al.,179,106,Subjective,Taste Only,NA,41,41,10.1002/jmv.26354,0.5027,NA,2020-07-23T00:00:00Z,Italy,50.27
+301,Singer-Cornelius et al.,51,10,Objective,Taste Only,NA,35.22,35.22,10.1007/s00405-020-06590-8,0.244,Taste Strips by BMG,2021-01-20T00:00:00Z,Switzerland,24.4
+303,Kumar et al. 2,141,34,Subjective,Taste Only,NA,15.2,15.2,10.1016/j.ijporl.2021.110626,0.589,NA,2021-01-10T00:00:00Z,India,58.9
+305,Morlock et al.,89,24,Subjective,Smell AND Taste,NA,37.37,37.37,10.5061/dryad.2547d7wpq,0.6742,NA,2021-01-22T00:00:00Z,United States,67.42
+306,Thakur et al.,250,172,Subjective,Taste Only; Taste and Smell,NA,NA,NA,10.1007/s12070-021-02364-8,0.576,AAO-HNS COVID-19 Anosmia Reporting Tool,2021-01-18T00:00:00Z,India,57.599999999999994
+307,Printza et al.,90,33,Subjective,Taste Only,NA,55.8,55.8,PMID: 33488054,0.589,NA,NA,Greece,58.9
+309,Tsivgoulis et al.,22,5,Subjective,Taste Only,NA,55,55,10.1007/s00415-020-09935-9,0.57,NA,2020-05-25T00:00:00Z,Greece,56.99999999999999
+310,Karadas et al.,239,16,Subjective,Taste Only,NA,46.46,46.46,10.1007/s10072-020-04547-7,0.556,NA,2020-06-25T00:00:00Z,Turkey,55.60000000000001
+312,Bagnasco et al.,37,11,Subjective,Taste Only,NA,69.19,69.19,10.1016/j.waojou.2020.100497,0.541,NA,20201-01-01T00:00:00Z,NA,54.1
+313,Ozcan et al.,157,22,Subjective,Smell AND Taste,NA,53.3,53.3,10.1080/14737159.2021.1882305,0.542,NA,2021-02-08T00:00:00Z,Turkey,54.2
+314,Akinbami et al.,40938,3478,Subjective,Smell AND Taste,NA,NA,NA,10.1093/cid/ciab080,NA,NA,2021-01-30T00:00:00Z,United States,NA
+316,Ninchritz-Becerra et al.,1043,718,Subjective,Taste Only,NA,39,39,10.1016/j.medcle.2020.08.004,0.364,NA,2021-01-22T00:00:00Z,Spain,36.4
+317,AlShakhs et al.,274,177,Subjective,Taste Only,NA,NA,NA,10.1007/s12070-020-02330-w,0.45,NA,2021-01-23T00:00:00Z,Saudi Arabia,45
+318,Mannan et al.,1021,415,Subjective,Taste Only,NA,NA,NA,10.1016/j.nmni.2021.100838,0.75,NA,2021-01-08T00:00:00Z,Bangladesh,75
+319,Cellejon-Leblic et al.,421,266,Subjective,Taste Only,NA,44.33,44.33,10.3390/jcm10040570,0.39,NA,2021-02-03T00:00:00Z,Spain,39
+321,Song et al.,1172,242,Subjective,Taste Only,NA,61,61,10.1007/s11596-021-2312-7,0.492,NA,2021-02-13T00:00:00Z,China,49.2
+322,O'Sullivan et al.,102,4,Subjective,Taste Only,NA,44.1,44.1,10.1093/occmed/kqab012,0.23,NA,2021-02-16T00:00:00Z,Ireland,23
+323,Savtale et al.,180,106,Subjective,Taste Only,NA,37.8,37.8,10.1007/s12070-021-02410-5,0.334,NA,2021-02-08T00:00:00Z,India,33.4
+324,Islek at el.,21,10,Subjective,Taste Only,NA,50.7,50.7,10.1007/s12070-021-02420-3,0.571,NA,2021-02-06T00:00:00Z,India,57.099999999999994
+326,Gupta et al.,387,153,Subjective,Taste Only,NA,NA,NA,10.1007/s12070-021-02391-5,0.659,NA,2021-02-10T00:00:00Z,India,65.9
+328,Soh et al.,1983,51,Subjective,Taste Only,35,NA,35,10.1007/s00405-021-06647-2,1,NA,2021-02-17T00:00:00Z,"Bangladesh, India, China",100
+330,Karni et al. 2,112,81,Subjective,Taste Only,NA,35,35,10.1093/ofid/ofaa589,0.64,NA,2021-12-28T00:00:00Z,Israel,64
+332,Cao et al.,11,8,Objective,Taste Only,NA,NA,NA,10.1016/j.wjorl.2021.02.001,0.18,NA,2021-02-12T00:00:00Z,United States,18
+333,Jethani et al.,196,20,Subjective,Taste Only,NA,38.9,38.9,10.1055/s-0040-1718584,0.7245,NA,2021-02-10T00:00:00Z,India,72.45
+334,Lombardi et al. 2,309,64,Subjective,Smell AND Taste,NA,NA,NA,10.1136/bmjopen-2020-047216,0.33,NA,2021-02-22T00:00:00Z,Italy,33
+335,Makaronidis,381,342,Subjective,Taste Only,NA,39.67,39.67,10.1186/s12879-021-05927-w,0.288,NA,2021-02-25T00:00:00Z,United Kingdom,28.799999999999997
+336,Monti et al.,39,12,Subjective,Taste Only,NA,56,56,10.1111/aas.13812,0.9,NA,2021-03-02T00:00:00Z,Italy,90
+337,Oda et al.,300,42,Subjective,Taste Only,53,NA,53,10.1007/s00540-021-02912-0,0.57,NA,2021-03-04T00:00:00Z,Japan,56.99999999999999
+338,Lampl et al.,1084,194,Subjective,Smell OR Taste,NA,43,43,10.1007/s15010-021-01580-2,0.5,NA,2021-03-05T00:00:00Z,Germany,50
+339,O'Keefe et al.,337,187,Subjective,Smell OR Taste,NA,45.7,45.7,10.1136/bmjopen-2020-044154,0.32,NA,2021-03-05T00:00:00Z,United States,32
+340,Asai et al.,92,5,Subjective,Taste Only,66,NA,66,10.1016/j.jmii.2020.07.011,0.54,NA,2020-07-22T00:00:00Z,Japan,54
+342,Martinez et al.,126,75,Subjective,Taste Only,NA,51.46,51.46,10.5604/01.3001.0014.3451,0.5,NA,2020-06-08T00:00:00Z,Spain,50
+343,Lee et al. 3,350,119,Subjective,Taste Only,47,NA,47,10.1177/01455613211000170,0.426,NA,2021-03-17T00:00:00Z,"Canada, Israel",42.6
+344,Fleischer et al.,102,9,Subjective,Smell OR Taste,61.5,NA,61.5,10.1177/1756286421993701,0.7,NA,2021-02-26T00:00:00Z,Germany,70
+345,Sun et al.,932,58,Subjective,Taste Only,58,NA,58,10.1111/1751-2980.12983,0.402,NA,2021-03-20T00:00:00Z,China,40.2
+348,Gibbons et al.,84,40,Subjective,Taste Only,NA,NA,NA,10.1007/s11845-021-02598-z,NA,NA,2021-03-05T00:00:00Z,Ireland,NA
+349,Sbrana et al.,541,401,Subjective,Taste Only,NA,38.9,38.9,10.3389/fphys.2021.622987,0.258,NA,2021-03-09T00:00:00Z,Brazil,25.8
+350,Omezli & Torul,107,60,Subjective,Taste Only,NA,34.532,34.532,10.4317/medoral.24510,0.52336,NA,2021-03-27T00:00:00Z,Turkey,52.336000000000006
+351,Ladoire et al.,17,4,Subjective,Taste Only,NA,35.3,35.3,10.1016/j.ejca.2021.02.027,0.167,NA,2021-02-27T00:00:00Z,France,16.7
+352,Boscolo-Rizzo et al.,268,168,Subjective,Taste Only; Taste and Smell,48,NA,48,10.1007/s00405-021-06839-w,0.3805,SNOTT-22,2021-05-07T00:00:00Z,Italy,38.05
+353,Schwab et al.,467,436,Subjective,Taste Only; Taste and Smell,NA,43.6,43.6,10.1159/000515132,0.2548,NA,2021-03-31T00:00:00Z,Denmark,25.480000000000004
+354,Rodebaugh et al.,162,119,Subjective,Taste Only,NA,45.8,45.8,10.1093/ofid/ofab090,0.31,NA,2021-03-01T00:00:00Z,United States,31
+355,Zejda et al.,1167,106,Subjective,Smell AND Taste,NA,46.2,46.2,10.3390/ijerph18063188,0.486,NA,2021-03-19T00:00:00Z,Poland,48.6
+357,Printza et al. 2,150,54,Subjective,Taste Only,NA,51.6,51.6,10.3390/jcm10050966,0.62,NA,2021-03-02T00:00:00Z,Greece,62
+358,Trachootham et al.,122,38,Subjective,Taste Only,NA,39.3,39.3,10.1016/j.ijid.2021.03.083,0.48,NA,2021-04-02T00:00:00Z,Thailand,48
+359,Sehanobish et al.,486,242,Subjective,Taste Only,NA,57,57,10.1177/19458924211004800,0.5267,NA,2021-04-04T00:00:00Z,United States,52.669999999999995
+360,Gurrola et al.,176,118,Subjective,Smell OR Taste,NA,38.4,38.4,10.1002/lio2.532,0.33,NA,2021-02-01T00:00:00Z,United States,33
+361,Hijazi et al.,449,59,Subjective,Taste Only,NA,8.42,8.42,10.1016/j.ijporl.2021.110701,0.502,NA,2021-03-31T00:00:00Z,Saudi Arabia,50.2
+362,Besli et al.,104,17,Subjective,Smell OR Taste,11.8,NA,11.8,10.5222/BMJ.2021.60490,0.51,NA,2021-03-31T00:00:00Z,Turkey,51
+363,Dini et al.,20,12,Subjective,Smell OR Taste,NA,39.4,39.4,10.13075/ijomeh.1896.01759,0.6,NA,2021-04-01T00:00:00Z,Italy,60
+364,Gonzalez et al.,100,51,Subjective,Taste Only,NA,42.1,42.1,10.1002/alr.22798,0.45,NA,2021-04-13T00:00:00Z,Chile,45
+365,Chung et al.,12,9,Subjective,Taste Only,NA,28,28,10.1093/ofid/ofaa199,0.39,NA,2020-06-20T00:00:00Z,China,39
+366,Kandakure et al.,200,22,Subjective,Taste Only; Taste and Smell,NA,NA,NA,10.1007/s12070-021-02540-w,0.545,NA,2021-04-10T00:00:00Z,India,54.50000000000001
+367,Dixon et al.,368,105,Subjective,Taste Only,NA,NA,NA,10.1371/journal.pone.0241875,0.4538,NA,2021-03-24T00:00:00Z,United States,45.379999999999995
+369,Boudjema et al.,673,315,Subjective,Taste Only; Taste and Smell,NA,NA,NA,10.1016/j.tmaid.2020.101875,0.404,NA,2020-09-06T00:00:00Z,France,40.400000000000006
+370,Galluzzi et al.,376,134,Subjective,Taste Only,NA,60.8,60.8,10.1159/000514888,0.63,NA,2021-04-01T00:00:00Z,Italy,63
+371,Zifko et al.,82,25,Subjective,Taste Only,NA,56,56,10.1016/j.jns.2021.117438,0.5365,NA,2021-04-08T00:00:00Z,Austria,53.65
+372,Amano et al.,24,5,Subjective,Smell OR Taste,NA,63.5,63.5,10.1016/j.resinv.2021.03.002,0.75,NA,2021-03-29T00:00:00Z,Japan,75
+373,Ismail et al.,100,53,Subjective,Taste Only,52,NA,52,10.1017/dmp.2021.123,0.43,NA,2021-04-19T00:00:00Z,Libya,43
+374,Garcia et al.,100,81,Subjective,Taste Only,NA,43,43,10.1016/j.ensci.2021.100338,0.43,NA,2021-04-14T00:00:00Z,Peru,43
+375,Tarifi et al.,86,22,Subjective,Smell AND Taste,36,NA,36,10.1111/ijcp.14260,0.5257,NA,2021-04-22T00:00:00Z,Jordan,52.56999999999999
+378,van der Besselaar,169,27,Subjective,Smell OR Taste,71.14,NA,71.14,10.1093/ageing/afab081,0.236,NA,2021-05-07T00:00:00Z,Netherlands,23.599999999999998
+379,Gianola et al.,530,309,Subjective,Taste Only,40,NA,40,10.1093/ptj/pzab123,0.37,NA,2021-05-08T00:00:00Z,Italy,37
+381,Teklu et al.,33,4,Subjective,Smell AND/OR Taste,NA,NA,NA,10.4314/ejhs.v30i5.2,0.727,NA,2020-09-01T00:00:00Z,Ethiopia,72.7
+382,El Kady et al.,58,20,Subjective,Taste Only,NA,NA,NA,10.1002/cre2.429,0.534,Mentions specifically loss of salt and sweetness,2021-05-01T00:00:00Z,Egypt,53.400000000000006
+384,Gupta et al. 2,98,39,Subjective,Taste Only; Taste and Smell,NA,41.4,41.4,10.1007/s12070-021-02563-3,0.489,NA,2021-04-27T00:00:00Z,India,48.9
+385,Alharbi et al.,889,114,Subjective,Smell AND/OR Taste,NA,NA,NA,10.1007/s10006-021-00965-9,0.434,NA,2021-05-05T00:00:00Z,United States,43.4
+387,Karaarslan et al.,300,159,Subjective,Taste Only,NA,53,53,10.1007/s00296-021-04882-8,0.6,NA,2021-05-12T00:00:00Z,Turkey,60
+388,Breyer et al.,163,62,Subjective,Smell OR Taste,NA,44.85,44.85,10.1038/s41598-021-89711-5,0.4485,NA,2021-05-12T00:00:00Z,Austria,44.85
+389,Parcha et al.,12306,369,Subjective,Smell AND Taste,NA,9.38,9.38,10.1038/s41598-021-89553-1,0.5117,NA,2021-05-13T00:00:00Z,United States,51.17
+393,Rousseau et al.,98,10,Subjective,Smell AND/OR Taste,NA,38.5,38.5,10.1016/j.arcped.2021.04.004,0.48,NA,2021-04-24T00:00:00Z,France,48
+394,Le Bon et al. 3,93,11,Objective,Taste Only; Taste and Smell,NA,42,42,10.1002/alr.22815,0.2903,Taste Strips,2021-05-19T00:00:00Z,Belgium,29.03
+395,Kamel et al.,175,13,Subjective,Smell OR Taste,NA,NA,NA,10.1016/j.jiph.2021.03.007,0.686,NA,2021-03-19T00:00:00Z,Saudi Arabia,68.60000000000001
+396,Ashrafi et al.,727,160,Subjective,Taste Only,NA,49.94,49.94,10.22037/aaem.v9i1.1210,0.569,NA,2021-01-01T00:00:00Z,Iran,56.89999999999999
+397,Wierdsma et al.,214,71,Subjective,Taste Only; Taste and Smell,64.8,NA,64.8,10.1016/j.clnesp.2021.03.021,0.69,NA,2021-04-12T00:00:00Z,Netherlands,69
+398,Moeller et al.,312,34,Subjective,Taste Only,NA,41,41,10.1136/bmjopen-2020-044208,0.484,NA,2021-05-24T00:00:00Z,Denmark,48.4
+399,de Torres et al.,209,117,Subjective,Taste Only; Taste and Smell,NA,45.6,45.6,10.1016/j.medcli.2020.12.015,0.308,NA,2021-05-24T00:00:00Z,Spain,30.8
+400,Noviello et al.,164,86,Subjective,Taste Only,NA,44.1,44.1,10.1111/nmo.14187,0.598,NA,2021-06-01T00:00:00Z,Italy,59.8
