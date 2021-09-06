@@ -1,0 +1,413 @@
+---
+title: "Taste-COVID19 Meta analysis"
+author: "Vicente Ramirez - Reed Lab"
+date: "8/11/2021"
+output:
+  html_document: default
+  pdf_document: 
+    fig_crop: no
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE}
+#devtools::install_github("MathiasHarrer/dmetar")
+require(dmetar)
+require(ggbeeswarm)
+require(tidyverse)
+require(googlesheets4)
+require(magrittr)
+require(meta)
+require(metafor)
+require(readxl)
+require(gtsummary)
+require(lubridate)
+
+```
+
+# Read in Data and Compute some statistics
+
+```{r fig.height = 6, fig.width = 12, cache=TRUE}
+COVID19<-read_csv("TASTELOSS_DATA_COVID19.csv")
+COVID19$p<- COVID19$`Number of Cases`/COVID19$`Number of Subjects`
+
+COVID19$S.E.<- sqrt((COVID19$p*(1-COVID19$p))/COVID19$`Number of Subjects`)
+COVID19$CI_Lower<-COVID19$p - 1.96*COVID19$S.E.
+COVID19$CI_Upper<- COVID19$p + 1.96*COVID19$S.E.
+COVID19 <- COVID19[order(COVID19$p,decreasing = T),]
+summary_COVID_Obj<-data.frame(Name="Summary (Objective)",Subjects=sum(COVID19[COVID19$`Sub-group`=="Objective","Number of Subjects"]),Cases=sum(COVID19[COVID19$`Sub-group`=="Objective","Number of Cases"]))
+summary_COVID_Sub<-data.frame(Name="Summary (Subjective)",Subjects=sum(COVID19[COVID19$`Sub-group`=="Subjective","Number of Subjects"]),Cases=sum(COVID19[COVID19$`Sub-group`=="Subjective","Number of Cases"]))
+
+summary_COVID<-bind_rows(summary_COVID_Obj,summary_COVID_Sub)
+
+COVID19$date = ymd(COVID19$`Date of First Publication`)
+COVID19$monthcontinuous<-12*(year(COVID19$date) - 2020) + month(COVID19$date)
+
+COVID19$datecontinuous <- yday(COVID19$date) + 365*(year(COVID19$date) - 2020)
+
+COVID19$Sub_group<-NA
+COVID19$Sub_group[COVID19$`Sub-group`=="Subjective"]<-"Self-Report"
+COVID19$Sub_group[COVID19$`Sub-group`=="Objective"]<-"Direct-Report"
+COVID19$`Measure Type`<-as.factor(COVID19$`Sub_group`)
+```
+
+## Computing Meta-Analysis of Proportions
+
+### IVM
+
+First we compute using the Inverse Variance Method
+
+```{r fig.align="center", fig.height=6, fig.width=8, , echo=F, cache=TRUE}
+ma.INV<- metaprop(event = COVID19$`Number of Cases`,n=COVID19$`Number of Subjects`,studlab = COVID19$`Author Name`,byvar = COVID19$`Sub_group`,data=COVID19, method="Inverse",sm="PFT", method.ci = "WS",hakn = T)
+summary(ma.INV)
+
+```
+
+# Check Robustness
+
+Notice how the estimates seem to be different. Howe different are they? Do they fit into the same conclusion here?
+
+```{r cache=TRUE}
+m1<-update.meta(ma.INV,sm = "PLOGIT")
+summary(m1)
+
+
+
+m2<-update.meta(ma.INV,sm="PRAW")
+summary(m2)
+
+m3<-update.meta(ma.INV,sm="PAS")
+summary(m3)
+
+```
+
+# Building a plot Inverse Variance Methodology
+
+```{r cache=TRUE}
+estimate_table=data.frame("pooledestimate"=transf.ipft(ma.INV$TE.random.w,ni=ma.INV$n.harmonic.mean.w))
+estimate_table$upper<- transf.ipft(ma.INV$upper.random.w,ni=ma.INV$n.harmonic.mean.w)
+estimate_table$lower<- transf.ipft(ma.INV$lower.random.w,ni=ma.INV$n.harmonic.mean.w)
+estimate_table$moderator<-as.factor(ma.INV$bylevs)
+
+
+
+data<-data.frame("estimate"=transf.ipft(ma.INV$TE, ni=ma.INV$n))
+data$n<-ma.INV$n
+data$moderator<-as.factor(ma.INV$data$.byvar)
+xlabel<-"Prevalence"
+data$se=sqrt((1/((data$n*4)+2)))
+
+
+ggplotINV <- ggplot2::ggplot(data = estimate_table,aes(x = pooledestimate, y=moderator)) +
+  ggbeeswarm::geom_quasirandom(data = data, aes(x = estimate, y = as.factor(moderator), size = 1/data$se, colour = moderator), groupOnX = FALSE, alpha=0.5) +
+  ggplot2::geom_errorbarh(data= estimate_table,aes(xmin = lower, xmax = upper),  height = 0, show.legend = FALSE, size = 1.2) +
+  ggplot2::geom_vline(xintercept = estimate_table$pooledestimate, linetype = 2, colour = "black", alpha = 0.4) +
+  ggplot2::geom_point(aes(fill = moderator), size = 3, shape = 21) +
+  ggplot2::theme_bw() +
+  ggplot2::guides(fill = "none", colour="none") +
+  ggplot2::theme(legend.position= c(1, 0), legend.justification = c(1, 0)) +
+  ggplot2::theme(legend.title = element_text(size = 8)) +
+  ggplot2::theme(legend.direction="horizontal") +
+  ggplot2::theme(legend.background = element_blank()) +
+  ggplot2::labs(x = xlabel, y = "", size= "1/SE") +
+  ggplot2::theme(axis.text.y = element_text(size = 8, colour ="black",
+                                            hjust = 0.5,
+                                            angle = 0)) +
+  ggplot2::theme(axis.text.x = element_text(size = 8, colour ="black",
+                                            hjust = 0.5,
+                                            angle = 0))
+
+ggplotINV
+```
+
+# Forest Plot for ma.INV
+
+```{r  fig.height = 30, fig.width = 8, cache=TRUE}
+forest(ma.INV,col.by = "black",pooled.events = T,bylab = "Measurement Type",print.Q = T,print.Q.subgroup = T,print.pval.Q = T)
+```
+
+# GLMM
+
+Next we compute using the GLMM method. This is ultimately the model we will use as is recommended by the literature. Upon computing, we find that
+
+```{r fig.align = "center", fig.height = 32, fig.width = 9.5, cache=TRUE}
+ma.GLMM<-metaprop(COVID19$`Number of Cases`,n=COVID19$`Number of Subjects`,studlab = COVID19$`Author Name`,byvar = COVID19$`Sub_group`,data=COVID19, method.ci = "WS",overall.hetstat = T,tau.common = F)
+
+ma.GLMM
+```
+
+
+```{r  fig.height = 30, fig.width = 8, cache=TRUE}
+forest(ma.GLMM,col.by = "black",pooled.events = T,bylab = "Measurement Type",print.Q = T,print.Q.subgroup = T,print.pval.Q = T)
+
+```
+
+
+
+# Plotting the GLMM
+
+```{r}
+estimate_table=data.frame("pooledestimate"=transf.ilogit(ma.GLMM$TE.random.w))
+estimate_table$upper<- transf.ilogit(ma.GLMM$upper.random.w)
+estimate_table$lower<- transf.ilogit(ma.GLMM$lower.random.w)
+estimate_table$moderator<-as.factor(ma.GLMM$bylevs)
+
+
+
+data<-data.frame("estimate"=transf.ilogit(ma.GLMM$TE))
+data$n<-ma.GLMM$n
+data$moderator<-as.factor(ma.GLMM$data$.byvar)
+xlabel<-"Prevalence"
+data$se<-ma.GLMM$seTE
+ggplot <- ggplot2::ggplot(data = estimate_table,aes(x = pooledestimate, y=moderator)) +
+  ggbeeswarm::geom_quasirandom(data = data, aes(x = estimate, y = as.factor(moderator), size = 1/se, colour = moderator), groupOnX = FALSE, alpha=0.5) +
+  ggplot2::geom_errorbarh(data= estimate_table,aes(xmin = lower, xmax = upper),  height = 0, show.legend = FALSE, size = 1.2) +
+  ggplot2::geom_vline(xintercept = estimate_table$pooledestimate, linetype = 2, colour = "black", alpha = 0.4) +
+  ggplot2::geom_point(aes(fill = moderator), size = 3, shape = 21) +
+  ggplot2::theme_bw() +
+  ggplot2::guides(fill = "none", colour="none") +
+  ggplot2::theme(legend.position= c(1, 0), legend.justification = c(1, 0)) +
+  ggplot2::theme(legend.title = element_text(size = 8)) +
+  ggplot2::theme(legend.direction="horizontal") +
+  ggplot2::theme(legend.background = element_blank()) +
+  ggplot2::labs(x = xlabel, y = "", size= "1/SE") +
+  ggplot2::theme(axis.text.y = element_text(size = 8, colour ="black",
+                                            hjust = 0.5,
+                                            angle = 0)) +
+  ggplot2::theme(axis.text.x = element_text(size = 8, colour ="black",
+                                            hjust = 0.5,
+                                            angle = 0))
+
+ggplot
+
+
+```
+
+# Exploring Relationship between moderators
+
+## LOESS for Age vs Prevalence
+
+I plotted Age vs the prevalence with a LOESS smoothing curve. It seems as if the relationship has a polynomial relationship.
+
+```{r}
+ggplot(COVID19, aes(x=Age, y=p)) + geom_point() + geom_smooth() + theme_bw()
+```
+
+## LOESS for SEX vs Prevalence
+
+```{r}
+ggplot(COVID19, aes(x=Sex, y=p)) + geom_point() + geom_smooth() + theme_bw()
+```
+
+# Sample Size
+
+```{r}
+ggplot(COVID19, aes(x=`Number of Subjects`, y=p)) + geom_point() + geom_smooth() + theme_bw()
+```
+
+# Log(SampleSize)
+```{r}
+ggplot(COVID19, aes(x=log(`Number of Subjects`), y=p)) + geom_point() + geom_smooth() + theme_bw()
+
+
+```
+
+# GLMM Meta Regression
+
+
+```{r}
+ma.GLMM<-metaprop(COVID19$`Number of Cases`,n=COVID19$`Number of Subjects`,studlab = COVID19$`Author Name`,byvar = COVID19$`Sub_group`,data=COVID19, method.ci = "AC",hakn = T)
+summary.meta(ma.GLMM,prediction = T,overall.hetstat = T,print.CMH = T,warn = T)
+```
+
+# AGE Regression
+
+```{r}
+agereg_nosquared<-metareg(ma.GLMM, ~ `Age`)
+
+summary(agereg_nosquared)
+```
+
+# Add the polynomial term to the regression. Perhaps a polynomial is the wrong way to go about this? Maybe we use a cubic spline?
+
+```{r}
+agereg<-metareg(ma.GLMM, ~ `Age` + I(Age^2),transf=transf.ilogit,hakn = T)
+agereg
+tbl_regression(agereg,label=list(`I(Age^2)`~ "Age<sup>2</sup>"),intercept = T) %>% 
+  as_gt() %>%
+  gt::fmt_markdown(columns = vars(label))
+
+
+
+par(mfrow=c(1,2))
+
+regplotmetareg<-metafor::regplot(agereg,mod="Age")
+regplotmetareg<-metafor::regplot(agereg,mod="Age",transf=transf.ilogit)
+
+
+```
+
+# Sample Size Regression
+
+```{r}
+Nreg<-metareg(ma.GLMM, ~ `Number of Subjects`)
+summary(Nreg)
+
+
+par(mfrow=c(1,2))
+
+regplotmetareg<-metafor::regplot(Nreg,mod="`Number of Subjects`")
+regplotmetareg<-metafor::regplot(Nreg,mod="`Number of Subjects`",transf=transf.ilogit)
+
+
+```
+
+# Log Sample Size Regression
+
+```{r}
+logNreg<-metareg(ma.GLMM, ~ log(`Number of Subjects`),hakn = T)
+summary(logNreg)
+
+
+
+regplotmetareg<-metafor::regplot(logNreg,mod="log(`Number of Subjects`)", xlim=c(1,11))
+regplotmetareg<-metafor::regplot(logNreg,mod="log(`Number of Subjects`)",transf=transf.ilogit, xlim=c(1,11))
+
+```
+
+The transformation makes the regression plot more interpretable.
+
+# Sex Regression
+
+```{r}
+sexreg<-metareg(ma.GLMM, ~ `Sex`,hakn = T)
+summary(sexreg)
+
+
+
+tbl_regression(sexreg)
+
+par(mfrow=c(1,2))
+regplotmetareg<-metafor::regplot(sexreg,mod="Sex", xlim=c(0,100))
+regplotmetareg<-metafor::regplot(sexreg,mod="Sex",transf=transf.ilogit, xlim=c(0,100))
+```
+
+
+# Looking at Objective Test Only
+
+```{r fig.height=8, fig.width=11}
+COVID19objective<- COVID19[COVID19$`Sub_group`=="Direct-Report",]
+
+
+
+indexsolution<-grep("*olution",COVID19objective$`Specific Type of Test`)
+indexstrip<-grep("Strip",COVID19objective$`Specific Type of Test`)
+COVID19objective$Test<-"Other"
+COVID19objective$Test[indexsolution]<-"Solution"
+COVID19objective$Test[indexstrip]<-"Strip"
+
+# Cao Paper is left as NA in the google sheet I have corrected it here
+COVID19objective$Test[2]<-"Strip"
+
+Objectivema.GLMM<-metaprop(COVID19objective$`Number of Cases`,n=COVID19objective$`Number of Subjects`,studlab = COVID19objective$`Author Name`,byvar = COVID19objective$Test,data=COVID19objective, method.ci = "AC",tau.common = F,prediction = T)
+
+
+forest(Objectivema.GLMM,col.by = "black",pooled.events = T,bylab = "Test")
+
+```
+
+A summary of the meta analysis with this moderator is here
+
+```{r}
+summary(Objectivema.GLMM)
+Objectivema.GLMM
+```
+
+
+# Age as a categorical variable
+
+```{r}
+
+COVID19$Agecategories<-NA
+COVID19$Agecategories[COVID19$Age <= 18] = "Adolescent"
+COVID19$Agecategories[COVID19$Age > 18 & COVID19$Age<=35] = "Young Adult"
+COVID19$Agecategories[COVID19$Age > 35 & COVID19$Age<=50] = "Middle Age"
+COVID19$Agecategories[COVID19$Age > 50 & COVID19$Age<=65] = "Older"
+COVID19$Agecategories[COVID19$Age > 65 ] = "Eldery"
+
+
+COVID19AGEDAT<-COVID19[is.na(COVID19$Agecategories)==F,]
+
+
+agecategories_ma.GLMM<-metaprop(COVID19AGEDAT$`Number of Cases`,n=COVID19AGEDAT$`Number of Subjects`,studlab = COVID19AGEDAT$`Author Name`,byvar = COVID19AGEDAT$`Agecategories`,data=COVID19AGEDAT, method.ci = "AC", hakn = T,method="GLMM")
+
+
+summary(agecategories_ma.GLMM)
+
+metareg(agecategories_ma.GLMM,~`Agecategories`,intercept = F)
+
+```
+
+
+
+
+# By Collection Criteria
+```{r}
+
+metaprop(COVID19$`Number of Cases`,n=COVID19$`Number of Subjects`,studlab = COVID19$`Author Name`,byvar = COVID19$Measurement,data=COVID19, method.ci = "AC", hakn=T,overall.hetstat = T,prediction = T)
+
+forest(ma.GLMM,col.by = "black",pooled.events = T,bylab = "Measurement Type",print.Q = T,print.Q.subgroup = T,print.pval.Q = T)
+
+```
+
+# Creating the Map
+```{r}
+
+install.packages("rgdal")
+install.packages("rgeos")
+install.packages("sp")
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+library(rgeos)
+library(rgdal)
+
+get_countries<-function(var) {
+   unlist<- paste0(var,collapse=", ") %>%
+     stringr::str_replace(pattern=" and ", replacement = ", ") %>%
+     stringr::str_split(pattern=", ") %>% unlist() %>% as_tibble()
+   colnames(unlist)<-"COUNTRIES"
+   return(unlist)
+   
+ }
+
+countries<-get_countries(COVID19$Country)
+
+##PREALLOCATING A DATAFRAME AND THEN USING IT TO FILL IN OUR COUNTRIES
+##IF TWO COUNTRIES ARE INVOLVED IN A STUDY THEN THEY ARE TALLIED FOR BOTH COUNTRIES
+##SUM OF STUDIES PER COUNTRY != TOTAL STUDIES USED BECAUSE MULTIPLE COUNTRIES PER STUDY
+counts<-data.frame("name"=character(dim(countries)[1]),"count"=numeric(dim(countries)[1]),stringsAsFactors = F)
+
+for(i in seq(1,dim(countries)[1])){
+  counter<-grep(countries$COUNTRIES[i],COVID19$Country)
+  counts$name[i]<-countries$COUNTRIES[i]
+  counts$count[i]<-length(counter)
+  counts<-as_tibble(counts) 
+}
+counts<-unique(counts)
+##PULL DATA FROM RNATURALEARTH AS SF DATAFRAME AND LEFT MERGE IT WITH OUR COUNTS
+world <- ne_countries(scale = "medium", returnclass = "sf")
+merge_dat<-left_join(world,counts)
+
+mapplot<-ggplot(merge_dat, aes(text=paste(merge_dat$name,"\nNumber of Studies: ",merge_dat$count))) +
+  geom_sf(aes(fill=merge_dat$count),show.legend = FALSE) + theme_minimal() + theme(legend.position= "none") + scale_colour_viridis_c(aesthetics = "fill", option="D",na.value = "lightgrey")
+
+count_country<-ggplot(counts, aes(x=reorder(name,count), y=count)) + geom_bar(aes(fill=count),stat="identity") + xlab(NULL) + ylab("# of Studies") + scale_color_viridis_c(aesthetics = "fill", option="D") + theme_bw() + ggplot2::theme(axis.text.x = element_text(angle = 60,hjust = 1.05,vjust=1.05,size = 12), axis.text.y = element_text(size=12),panel.grid = element_blank()) 
+
+library(ggrepel)
+cowplot::plot_grid(mapplot,count_country,nrow=2,rel_heights = c(1.5,1))
+```
+
+
